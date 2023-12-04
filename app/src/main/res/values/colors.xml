@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Custom Colors -->
+    <color name="mainColor">#d12351</color>
+    <color name="secondaryColor">#ee4c72</color>
+    <color name="backgroundColor">#ede8e8</color>
+    <color name="mainTextColor">#0D0D0D</color>
+    <color name="secondaryTextColor">#332927</color>
 </resources>
