@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import net.mustafabaser.tastybite.data.entity.Foods;
 import net.mustafabaser.tastybite.databinding.CardDesignBinding;
-import net.mustafabaser.tastybite.ui.fragment.HomepageFragment;
 import net.mustafabaser.tastybite.ui.viewmodel.HomepageViewModel;
 
 import java.util.List;
@@ -44,11 +43,20 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.CardDesignHo
 
     @Override
     public void onBindViewHolder(@NonNull FoodsAdapter.CardDesignHolder holder, int position) {
+        Foods food = foodsList.get(position);
+        CardDesignBinding t = holder.binding;
+
+        t.productTitle.setText(food.getYemek_adi());
+        t.productPrice.setText(food.getYemek_fiyat());
+
+        // Action to Fragment Detail (Food Detail)
+
 
     }
 
     @Override
     public int getItemCount() {
-        return foodsList.size();
+        return foodsList != null ? foodsList.size() : 0;
+        //return foodsList.size();
     }
 }
