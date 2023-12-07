@@ -1,4 +1,9 @@
 package net.mustafabaser.tastybite.di;
 
-public class HiltApplication {
+import android.app.Application;
+
+import dagger.hilt.android.HiltAndroidApp;
+
+@HiltAndroidApp
+public class HiltApplication extends Application {
 }
